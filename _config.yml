@@ -1,21 +1,42 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Being programmer is all about sharing!
-email: irsyad.lubis@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-    Ever since I decided to become a programming, I felt this
-    urge from inside myself to share everything I know aboug
-    programming. That's the wonderful world of programming.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ir210.github.io" # the base hostname & protocol for your site
-twitter_username: irsyadlubis
-github_username:  ir210
+title: ir
+description: 'Being programmer is all about sharing!'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Irsyad Asyhari Lubis'
+  email: irsyad.lubis@gmail.com
+  twitter_username: irsyadlubis
+  facebook_username: irsyad.lubis@gmail.com
+  github_username:  ir210
+  linkedin_username:  irsyad.lubis@gmail.com
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+paginate: 5
+paginate_path: 'page:num'
+
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
