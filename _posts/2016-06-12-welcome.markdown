@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Welcome to my blog!"
+date:   2016-06-12 08:53:32 +0700
+categories: first update
+---
+
+Hello, there.
+
+This is my first technical blog. This blog serves me two purposes.
+
+1. To share what I have learnt for the past 15 years in computer field. 
+2. To improve my writing skill in English.
